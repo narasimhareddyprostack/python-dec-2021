@@ -1,0 +1,38 @@
+About Python
+Road Map - Learning Road Map 
+
+What is Python?
+python - general purpose High Level Programing Language.
+Developed By - Van Rossum - 1990.
+
+First programming language for beginners.
+
+OOP Language  - Java, C++[Python]  
+Script Programing Language - Javascript, VB, perl,[Python]
+functional Programing Language - C language
+modular modular programming language - Modula-3
+
+-Van Rossum - copies all good features.
+
+Features of Pyton
+1.Dynamic Typed
+2.Simple and easy to learn
+3.Open source and Freeware 
+4.Platform Independent 
+5.Portability(AWS-->Azure/GCP)
+6.OOP - (Abstraction, Ecapsulation, Inheritance, Poly)
+7.Python Embedded
+  We can use python programming in any other languages.
+  
+8.Community Support/Extensive Libraries
+
+Required Software 
+Python 
+IDE - Integrated Dev Env (Thonny, Pycharm).
+
+
+
+
+ 
+
+
