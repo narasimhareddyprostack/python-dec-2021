@@ -27,12 +27,39 @@ Features of Pyton
 8.Community Support/Extensive Libraries
 
 Required Software 
-Python 
+Python 3
 IDE - Integrated Dev Env (Thonny, Pycharm).
 
 
 
+Python Editor
+1) IDLE - coming along with Python installation
+	   integrated Development Learning Env 
+2)VS Code 
+3)Thonny
+4)PyCharm 
+5)Notepad++
 
- 
 
+Identifier Rules:
+---------------------
+1.a to Z / A to Z (Alphabet symbols)
+2.Identifier should not start with digits 
+3.Underscore(_) , If identifier start with (_) -it indicate private 
+4.Identifier are case sensitive 
+5.We cant use reserved/keywords as identifiers.
+6.Special symbols are not allowed
+
+What is Keywords?
+
+Python is simple and easy to Learn?
+
+
+['False', 'None', 'True', 'and', 'as', 'assert', 
+'async', 'await', 'break', 'class', 'continue', 
+'def', 'del', 'elif', 'else', 'except', 
+'finally', 'for', 'from', 'global', 'if', 
+'import', 'in', 'is', 'lambda', 'nonlocal', 
+'not', 'or', 'pass', 'raise', 'return', 'try', 
+'while', 'with', 'yield']
 
