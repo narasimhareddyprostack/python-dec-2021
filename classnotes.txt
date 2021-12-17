@@ -63,3 +63,178 @@ Python is simple and easy to Learn?
 'not', 'or', 'pass', 'raise', 'return', 'try', 
 'while', 'with', 'yield']
 
+Python is Dynamically Typed Programing Language.
+we are not required to specify the data type explictilty.
+
+based on the provided value, type will be assigned.
+
+Data Types in Pyton 
+-------------------
+int 
+bool
+float 
+str 
+
+bytes
+bytearray
+range
+
+list
+tuple
+dict
+set
+
+frozenset
+None 
+
+
+Python fundamental data types.
+------------------------------
+int 
+float 
+bool
+str 
+
+In Python contains several built-in functions 
+print()
+type() - to check the type of variable.
+id() - address of object - JVM print inter
+
+
+
+int Data Type:
+a = 101
+
+we can represent int values in the following ways 
+
+1.decimal form
+2.binary form 
+3.octal form   (0 to 7)
+4.HexaDecimal Form (0 to 9 + A to F)
+
+
+1.Decimal Form(base-10)
+----------------------------
+base-10 means (0 to 9 ) 
+Its default number system.
+Allowed digits are 0 to 9 
+
+2.Binary
+
+
+
+Base conversion built-in functions.
+bin()
+hex()
+oct()
+
+float Data Types
+------------------
+
+Type Casting
+-------------
+
+int()
+float()
+str()
+bool()
+complex()
+
+===============================
+Python built-in funciton 
+-------------------------
+print()
+id() 
+type()
+
+Type casting built-in functions 
+---------------------------------
+int()
+bool()
+complex()
+str()
+float()
+
+bin() 
+hex()
+oct()
+
+============================================
+Python Data Types (13+) 
+
+int : 
+float 
+bool
+str 
+
+complex - scientific application and Electrical Engineering
+
+10+5j
+
+
+bytes  
+bytes represents group of  byte numbers just like array
+
+
+size = [38,40,42,44] // In JS we called array 
+b = bytes(x)
+
+
+bytearray 
+#what is bytearray?
+bytearray is extactly same as bytes except that its elemetns we can modify
+
+bytes  and bytearray?
+
+bytes are immutable 
+bytearray is mutable.
+
+range 
+
+list  - mutable 
+tuple - immutable
+set 
+dict 
+
+frozenset 
+None 
+
+================================
+list Data types:
+If we want to represent a group of values a single entity where insertion order required.
+
+1.duplicate are allowed 
+2.heterogeneous elemetns are allowed 
+3.incr/decr - growable nature 
+4.inserion order is preserved
+5.[] 
+6.Mutable object
+
+Tuple data Types
+==================
+exactly same as list data type except - tuple is immutable.
+we cant change the values.
+
+
+set :
+=================
+If we want to present a group of values a single entity 
+with out duplicate and where order is not imp, then we go for set.
+
+1.insertion order is not preserved
+2.duplicate are not allowed
+3.heterogeneous objects are allowed 
+4.growable in nature 
+5.index concept is not applicable
+6.Set is mutable object.
+
+set vs frozenset
+set - is mutable
+frozenset - is immutable 
+
+
+None?
+
+
+
+
