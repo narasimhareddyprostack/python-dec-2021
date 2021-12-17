@@ -234,7 +234,25 @@ frozenset - is immutable
 
 
 None?
+====================================
+Type             
+int            - immutable 
+float          - immutable 
+complex        - immutable
+bool           - immutable 
+str            - immutable 
+bytes          - immutable
+bytearray      - mutable 
+ 
+range          - immutable 
+list []        - mutable( growable in nature)
+set   {}       - mutable
+tuple ()      - immutable
+dict  {}      - mutable
+frozenset     - immutable
+None          - immutable
 
 
 
-
+a = 100
+a = 200 
