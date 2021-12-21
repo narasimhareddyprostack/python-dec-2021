@@ -6,8 +6,8 @@ print(type(size))  # list
 print(type(ba))    # bytearray
 print(type(b))     # bytes
 
-ba[0]=39
-#b[0]=39
+ba[0]=39   # assignment is possible
+#b[0]=39   # element modify/assignment not possbile
 print(ba[0])
 
 #what is bytearray?
