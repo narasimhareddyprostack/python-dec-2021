@@ -259,3 +259,74 @@ a = 200
 
 Pyton Operators:
 ====================
+
+Ternary Operator 
+
+Special Operator
+
+Identity Operatos 
+is 
+is not
+Membership Operator
+in     - Return True if the given object present in the specified collection.
+not in - Return True if the given object not present in the specified collection.
+
+
+
+Input and print Statement
+
+Reading dynamic input from keyboard:
+
+a = input("Plese Enter Value:")
+
+
+
+=====================================
+if-elif-else (if else ladder)
+
+
+
+
+
+break 
+we can use break statement/keyword inside loops(for and while)
+to break loop based on condition.
+
+for i in range(1,10):
+print(i)
+
+
+
+continue:
+we can use continue statement/keyword to skip the current iteration and continue next iteration.
+
+
+
+pass - statement :
+we can define empty block with pass keyboard.
+
+pass 
+a)It is empty block
+b)null state 
+c)won't do anything
+
+
+for value in sequence: 
+   pass 
+   
+  
+i=0
+while i<=10:
+   pass
+   i =i +1 
+
+we can use loops  to repeat code execution.
+For loop : iterate every item in the sequence 
+
+while loop: until condition false , iterate group of statement .
+
+How to exit from the loop?
+by using break statement 
+
+how to skip the current iteration?
+using continue statement. 
