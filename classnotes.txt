@@ -330,3 +330,84 @@ by using break statement
 
 how to skip the current iteration?
 using continue statement. 
+======================================
+
+List Data Type 
+
+create Read 
+
+How to Read List , list elements 
+Iterating list using while and for loop .
+
+List built-in function 
+len() - funciton
+size = ['s','m','l']
+print(len(size))
+len()  - return the number of elemens in the list.
+
+count() -return the number of occurances of item in the list 
+index() -return the index of first occurance of specified item
+
+size = ['s','m','l','m','m']
+print(size.index('m'))
+
+
+Note:If the specified element not present in the list then we will get ValueError: 'x' is not in list
+
+Better before using index() method we have to check whether item present in the list of not.
+
+with help of membership operator in
+print('s' in size)
+
+size = ['s','m','l','m','m']
+print(size.index('x'))
+print('s' in size)
+
+
+count() - -return the number of occurances of item in the list 
+
+
+updating list 
+=============
+append() - to add element at the end of the list 
+insert() - insert the element @ specifed index position.
+extend() 
+
+deleting list element 
+remove()
+pop()
+
+
+
+extend() - To add all items of one list to anoter list 
+
+list1  = [1,2,3,4]
+list2 =[5,6,7,8]
+list1.extend(list2) #list 2 will be added to list1
+print(list1)
+print(list2)
+
+
+append() and insert() - adding the element
+extend() - add list to another list 
+
+remove() function:
+we can use this function, to remove the specifed item form list.
+
+If the item present multiple times , only first occurance will be removed.
+
+
+reverse() - reverse() function - used to reverse ordering the list .
+
+ 
+sort() - sort the elements.
+
+
+number -  Ascending order  
+string -  Alphabetical order 
+
+Note: To use sort() function, compusary list should contain only homogenous elemtns 
+other wise will get Error,
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+
