@@ -5,3 +5,5 @@ size[1] = 40
 size[2] = 42
 size[3] = 44
 print(size)
+#once we create list object, we can modify the content.
+#List objects are mutable.

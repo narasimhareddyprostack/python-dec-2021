@@ -7,7 +7,7 @@ print(size[2])
 print(size[3])
 #print(size[4])  #IndexError: list index out of range
 
-print(size[-1])
-print(size[-2])
+print(size[-1])  #44
+print(size[-2])  #42
 print(size[-3])
 print(size[-4])
