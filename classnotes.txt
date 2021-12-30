@@ -411,3 +411,199 @@ other wise will get Error,
 TypeError: '<' not supported between instances of 'str' and 'int'
 
 
+clone of list of object 
+---------------------
+copy() function 
+by using [:] slice operator 
+
+
+len() 
+count()
+index()
+
+append() 
+insert()
+extend()
+
+remove()
+pop() 
+
+copy()
+
+To Ordering list elements 
+reverse()
+sort()
+--------------------------------
+list 
+tuple 
+set - intro
+dict 
+
+
+Write a program to display unique vowels in given word?
+heeeeello  - 2 
+a e i o u 
+
+count = 0
+word = "Hello"
+for char in word:
+    if char in ['a','e','i','o','u']:
+	   count  =count+1 
+
+print(count)
+
+
+
+count = []
+word = "Helloou"
+for char in word:
+    if char in ['a','e','i','o','u']:
+        if char not in count:
+            count.append(char)
+	   
+
+print(count)
+print("No of unique vowels:", len(count))
+
+WAP to print unique vowels in present in given word using while loop.
+
+====================================
+List 
+Mathematical Operator for list Objects
+
++
+a = [1,2,3]
+b = [4,5,6]
+c = a+b 
+
+print(c)
+	  
+	  
+	  a = [1,2,3]
+b = [4,5,6]
+c = a+b 
+
+print(c)
+#To use + operator compulsory both arg should be list object.
+#otherwise we will Type Error
+
+
+* - Repetition operator:
+We can use repetition operator * , to repeat list specified number of time. 
+
+ 
+Membership operator 
+in operator 
+not in operator
+
+size = [38,40,42,44]
+
+print(40 in size) # true 
+
+clear() funciton 
+We can use clear function to remove all elments of list.
+
+size = ['s','m','l']
+print('xl' not in size) # true
+
+size.clear()
+print(size)
+
+
+==================================
+Tupe Data Type 
+Tuple is exactly same as list except mutability.
+
+List is mutable 
+Tuple is immutable.
+Once we create a tuple object, we cant perfrom perform
+any changes in the object.
+
+- If you want to represent group element where insertion order required 
+where allowed duplicate 
+
+Heterogeneous object are allowed .
+
+How to crete tuple ?
+How to to read tuple and tuple elements?
+
+size1 = 38,40,42,44
+size = (38,40,42,44)
+print(type(size))
+print(type(size1))
+
+# parenthesis is optional
+a = 10   # int 
+b = (10,) # single valued tuple
+print(type(a))
+print(type(b))
+
+If you want to represent single valued tuple, 
+compulsory the element should end with comma,
+
+Creation of tuple 
+=================
+
+By using tuple() function.
+
+size = []  #list 
+newSize = tuple(size)
+print(type(newSize))
+
+
+size = (10,20,30,40,50)
+print(size[0])
+for s in size:
+    print(s)
+	
+	
+by using slice operator:
+size = (10,20,30,40,50)
+#        0  1 2 3  4
+print(size[0])
+for s in size:
+    print(s)
+    
+print(size[2:5])
+
+
+tuple is - immutable 
+
+ t[0] = 100
+TypeError: 'tuple' object does not support item assignment
+
+Important functions
+====================
+len() - to return number of elmetns in tuple 
+count() - to return no of occurances of given element 
+
+index()  - to return first occurance of  given element
+sorted() - we can sort tuple elment 
+
+min()
+max() 
+
+t1 = (4,54,43,89,23,323)
+t2 = sorted(t1)
+print(t2)
+
+#sorted() - to sort elements based default sort order
+# is natural sort order 
+
+t1 = (4,54,43,89,23,323)
+t2 = sorted(t1,reverse=True)
+print(t2)  #[323, 89, 54, 43, 23, 4]
+
+
+t1 = (4,54,43,89,23,323)
+t2 = sorted(t1,reverse=True)
+print(t2)  #[323, 89, 54, 43, 23, 4]
+
+#sorted() - to sort elements based default sort order
+# is natural sort order
+
+print(min(t1))
+print(max(t1))
+
+min() and max() - functions:
+
