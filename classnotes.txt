@@ -606,4 +606,142 @@ print(min(t1))
 print(max(t1))
 
 min() and max() - functions:
+------------------------------------
 
+Set 
+---
+If we want represent group of unique values as one entity we should go for set.
+
+Duplicates are not allowed 
+indexing and slicing is not possible.
+Insertion order not preserved. But can sort the element.
+Hetrogeneous object allowed 
+
+Set is mutable object. once we create set object we can perform any changes.
+
+we are representing - {} 
+
+- union ,intersection,difference, - mathematical op 
+---------------
+
+s = {100,200,300}
+#Read Set values
+
+print(s[0])
+
+Set - indexing and slicing is not possible.
+TypeError: 'set' object is not subscriptable.
+
+size = [38,40,42,44]
+s = set(size)
+print(s)
+#we can create set objects using set() function.
+#set() function - iterable object.
+
+s2 = set(range(10))
+print(s2)
+s3 = {100,200,300,400}
+print(s3)
+
+
+--------------------------------------
+set function:
+
+add() - function
+update() - To add multiple itesm 
+copy() - return copy of set 
+
+pop() - It removes some random element 
+remove(x): It removes specified element 
+discard(x):It removes specified element 
+
+diff add() and update() 
+-----------------------
+we can use add() function to add individucal items 
+update() function to add multiple items 
+
+s = {100,200,300}
+s.add(400)
+s.update(range(10), [10,11,12])
+print(s)
+    
+	
+Sorted(set)
+newSize = {46,42,38,44,40}
+sorted(newSize,reverse=True)
+print(newSize)
+
+
+difference between remove() and discard()
+pop() - It removes some random element 
+remove(x): It removes specified element 
+
+If  the specified element not present in set, we get key Error.
+discard(x):It removes specified element 
+If  the specified element not present in set, we wiil not get any Error.
+
+s = {10,'Hello',20,True,30,'s'}
+#s.remove(100)
+s.discard(200)
+print(s)
+
+
+clear() - to remove all elements in the set .
+s = {10,'Hello',20,True,30,'s'}
+
+
+s.clear()
+-----------------------------------------
+Mathematical Operation on set 
+
+union
+intersection
+difference
+sematic_difference
+
+a = {10,20,30,40}
+b = {30,40,50,60}
+print(a | b)
+print(a.union(b))
+print(b.union(a))
+
+a.union(a) ---> We can use union() function to return all elements present in both sets
+
+intersection -return common elements present in both sets
+
+a = {10,20,30,40}
+b = {30,40,50,60}
+print(a & b)
+print(a.intersection(b))
+print(b.intersection(a))
+
+Difference(): 
+
+a = {10,20,30,40}
+b = {30,40,50,60}
+print(a - b)
+print(a.difference(b))
+print(b.difference(a))
+
+
+
+a = {10,20,30,40}
+b = {30,40,50,60}
+print(a | b)  # union
+print(a & b)  # intersection
+print(a - b)  # difference
+print(a ^ b)  #symetric differnce
+
+
+
+Symmetric Defference :
+Return elements present in either a or b . But not in both.
+
+Membership operators
+in 
+not in 
+
+s = {10,20,30}
+print( 10 in s)
+print(10 not in s)
+print(100 in s)

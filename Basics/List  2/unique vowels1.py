@@ -7,4 +7,4 @@ for char in word:
 	   
 
 print(count)
-print("No of unique vowels", len(count))
+print("No of unique vowels:", len(count))

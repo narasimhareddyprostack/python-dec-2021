@@ -1,7 +1,7 @@
 count = 0
-word = "Heeullo"
+word = "Hello"
 for char in word:
     if char in ['a','e','i','o','u']:
-        count =count+1 
+	   count  =count+1 
 
 print(count)
