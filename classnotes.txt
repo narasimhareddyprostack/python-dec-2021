@@ -745,3 +745,171 @@ s = {10,20,30}
 print( 10 in s)
 print(10 not in s)
 print(100 in s)
+
+
+======================================
+
+dict:
+If you want to represent group of key:value pair - dict.
+
+Javascript - Object 
+emp = { id:101, name:"Rahul Gandhi"}
+
+Java - Map Object 
+HashMap hm = new HashMap();
+
+
+d = {key1:value1, key2:value2, keyn:valuen}
+Duplicates keys are not allowed But values are allowed.
+
+Heterogeneous Object are allowed for both key:value 
+Insertion order  is not allowed.
+Indexing and slicing in not applicable.
+
+Dictionary/dict is multiple.
+emp = {}
+d = dict()
+
+print(type(emp))
+print(type(d))
+print(emp)
+print(d)
+
+emp = {}
+emp['id'] = 101
+emp['name']='Rahul Gandhi'
+emp['sal'] = 45000
+print(emp)
+
+d = {'user_Id':101}
+print(d)
+
+
+How to access data from dictionary?
+
+#Read
+#we can access data by using key
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp['emp_id'])
+#print(emp.emp_id)
+#AttributeError
+
+
+If the specified key in not available then we will get keyError.
+
+print(emp['sal']) #keyError
+
+
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp)
+#how to update emp_Name
+emp['emp_Name'] = "Priyanka Gandhi"
+print(emp)
+
+emp['sal'] = 55000
+
+print(emp)
+
+
+Note: If the key is not available then a new entry will be added.
+
+if the key is already available then old value replaced by new value.
+
+How to delete elments from dictionary?
+
+using del keyword 
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp)
+del emp['emp_id']
+print(emp)
+
+
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp)
+emp.clear()
+print(emp)
+
+#clear() - list, set, dict
+#To remove all entries form the given sequence
+#To remove all entries form the dictionay
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp)
+
+emp.clear()
+
+print(emp)
+del emp   # To delete total dictonary object.
+print(emp)#NameError: name 'emp' is not defined
+
+
+Important funciton for Dictionary/dict
+
+dict() # to create dictionary
+
+
+emp = dict()
+order = {}
+d = dict({ 'emp_id':101, 'emp_Name':'Rahul Gandhi'})
+print(d)
+print(emp)
+print(order)
+
+len() 
+
+d = dict({ 'emp_id':101, 'emp_Name':'Rahul Gandhi'})
+print(len(d))
+
+pop(key)  
+popitem() 
+
+
+num = {1:"One", 2:"Two", 3:"Three"}
+value = num.popitem()
+print(num)
+print(value)
+
+
+popitem() - it removes an entry from dictionary and return it. 
+
+
+num = {1:"One", 2:"Two", 3:"Three"}
+#print(type(num.keys()))
+for key in num.keys():
+    print(key)
+    
+for value in num.values():
+    print(value)
+    
+#print(num.values())
+
+keys() - It return all keys form dictionay
+values() - It return all values form dictionary.
+
+emp = { 'emp_id':101, 'emp_Name':'Rahul Gandhi', 'sal':45000}
+
+print(type(emp.items()))
+
+for k,v in emp.items():
+    print(k,":",v)
+	
+items() - it return list of tuples as k:v from dictionary object.
+
+
+keys()
+values()
+items() 
+
+copy() - To create exactly duplicate dict object 
+
+get()
+
+emp ={ 'emp_id':101, 'emp_Name':'Rahul Gandhi'}
+print(emp.get('emp_id'))
+print(emp['emp_id'])
+
+print(emp.get('sal', 45000))
