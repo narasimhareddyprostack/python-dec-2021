@@ -913,3 +913,82 @@ print(emp.get('emp_id'))
 print(emp['emp_id'])
 
 print(emp.get('sal', 45000))
+
+
+List of funcitons - dictionary
+
+len()
+dict()
+
+clear()
+pop()
+popitem()
+
+get()
+copy()
+
+keys()
+values()
+items()
+
+
+==================================
+Functions
+What is function?
+
+-group of statement for specifc task/operation.
+
+-group of statements as single unit and we can call number of times
+based on our requirement.
+
+The main advantages of function - code reusability.
+
+Pyton supportin 2 types of functions.
+1.Built-in function.
+2.User Defined function.
+
+Built-in function:
+Pyton software 
+which are coming from python software automatically
+
+User Defined Functions:
+
+Syntax:
+
+def funciton_name(parameters):
+	statement1
+	statement2
+	statement3
+
+
+funciton_name(argument)
+
+def - keyword : mandatory 
+return - optional
+
+Parameters:
+parameters are input to funciton.
+
+def add(a,b):
+    print(a+b)
+
+add(10,20)   # 30
+add(200,300) # 500
+
+def greet(msg):
+    print(msg)
+
+greet("Good Morning")
+
+
+ 
+def squereEx(number):
+    print(number*number)
+    
+squereEx(4)
+
+
+positional argument?
+
+4 Types of argument.
+
