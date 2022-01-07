@@ -988,7 +988,181 @@ def squereEx(number):
 squereEx(4)
 
 
-positional argument?
 
 4 Types of argument.
+
+positional argument?
+keyword argument
+default agrument
+variable length argument
+
+
+def sub(a,b):
+    print(a-b)
+
+sub(10,20)  # -10 
+
+sub(20,10)  # 10 
+
+If we change the order then result may be changed.
+
+
+keyword arguments
+We can pass agrument valeus by keywords ie by parameters name.
+
+Order of arguments is not imp but number of argument must be matched
+
+def greet(name,message):
+    print("Hello,", name,message)
+
+greet(name="Rahul Gandhi",message="GM")
+greet(message="GM",name="Rahul Gandhi")
+
+
+default Argument
+
+def greet(name="politician"):
+	print(name)
+	
+greet()
+greet("Rahul")
+
+- some times we can provide default values for our positional arguments.
+
+
+
+def greet(id,name="politician"):
+	print(id,name)
+	
+greet(101)
+greet(101,"Rahul")
+
+
+
+Note: After default agrument we should not take non-default agrument.
+
+
+
+variable length agruments(*)
+
+
+def sum(*n):
+	print(n)
+
+	
+sum()
+sum(10)
+sum(10,20)
+sum(10,20,30)
+sum(10,20,30,40)
+
+'''
+()
+(10,)
+(10, 20)
+(10, 20, 30)
+(10, 20, 30, 40)
+'''
+
+we can declare variable length agrument with * symbol.
+	
+sum()
+sum(10)
+sum(10,20)
+sum(10,20,30)
+sum(10,20,30,40)
+
+
+
+variables
+
+Global 
+Local 
+
+Global Variable:
+
+The variable which are declared outside of functins
+These variable can be accessed in all functions of the module.
+
+
+
+
+Python Functions 
+-----------------
+anonymous functions/nameless
+
+Normal function.
+
+def add():
+	pass
+	
+Javascript - nameless
+
+lambda function 
+----------------
+we can define by using lambda keyword 
+
+
+lambda list_agrs : expression 
+
+lambda n : n+1 
+
+lambda a,b: a+b 
+
+def add(a,b):
+	return a+b
+	
+# def add(a,b):
+#     return a+b
+# print(add(10,20))
+#
+# add = lambda a : a+1
+# print(add(10))
+
+# s =lambda  n : n*n
+# print(s(10))
+
+def s(n):
+    return n*n
+
+print(s(10))
+
+By using lambda functions we can write very shorter/concise code.
+we are improving readability of code.
+
+nameless/anonymous/lambda function.
+
+dummy = lambda a,b,c: a+b+c+100 
+
+result = dummy(10,20,30)
+
+
+map() function :
+
+for every element present in list/given sequence, apply some funcitonality and generate new list with required modifications.
+
+map(function, sequence)
+
+map(lambda a:a+1, [1,2,3,4])
+list(map(lambda a:a+1, [1,2,3,4]))
+print(list(map(lambda a:a+1, [1,2,3,4])))
+
+
+map() - to iterate list, and execute function.
+every iteration executing one function.
+
+map(funcition, sequence)
+
+filter(function,sequence)
+[1,2,3,4,5,6,7,8,9,10]
+print - only add number 
+def odd_number():
+    
+filter() - funcition to  filter values from given sequence based on condiftion.
+
+filter(1,2)
+filter(fun, sequence)
+map()
+reduce()
+--------------------------------------
 
