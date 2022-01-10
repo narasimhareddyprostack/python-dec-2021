@@ -6,7 +6,9 @@ def outer():
 
     return inner
 
-x = outer()
-
-message = x()
-print(message)
+#x = outer()   # calling funciton
+y = outer      # function ref /function alisasing(anothor name)
+y()
+#
+# message = x()
+# print(message)

@@ -1,0 +1,6 @@
+import namevar
+
+
+namevar.display()
+
+

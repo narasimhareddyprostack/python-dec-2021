@@ -1162,7 +1162,49 @@ filter() - funcition to  filter values from given sequence based on condiftion.
 
 filter(1,2)
 filter(fun, sequence)
-map()
+map()  - function to iterate your sequence, return new element 
 reduce()
 --------------------------------------
+
+function aliasing 
+
+def add():
+	print("addition")
+	
+x = add 
+x()
+add()
+
+del add 
+x()
+
+
+filter(fun_ref, sequence)
+filter() is function , it take two argument
+1. function_ref 
+2. sequence - list,tuple,set, dict, range()
+map(fun_ref,sequence)
+reduce(fun_ref,sequence)
+
+Decorator 
+---------
+decorator is a function which can take a functin as agrument.
+and extending its functionality.
+
+
+
+The main objective : 
+we can extend fuctionality of existing function
+without modifies that funciton 
+
+@update_Div
+def division(a,b):
+    return a/b
+
+
+def update_Div(func):
+	pass 
+	
+	
+
 
