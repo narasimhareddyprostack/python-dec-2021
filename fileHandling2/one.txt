@@ -1,0 +1,3 @@
+The useState Hook lets you add state to functional components.
+In Class Component, state is always an object.
+With the useState Hook, the state doesnt have to be an object.

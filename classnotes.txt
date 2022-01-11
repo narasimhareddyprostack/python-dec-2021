@@ -1206,5 +1206,137 @@ def update_Div(func):
 	pass 
 	
 	
+===================================
+Modules
+-------
+A group of variable, functions and classes saved as file.
+which is nothig but modules.
 
 
+test.py
+
+a = 10 
+b = 20 
+
+def add():
+	pass 
+	
+class A:
+   pass
+
+ 
+Every python file(.py) acts as a modules.
+
+import moduleName 
+If we want to use members(var, functions and classes)
+of module in our program we should import the module.
+
+import moduleName 
+
+
+We can access members by using module name.
+
+Renaming a module at time of import 
+------------------------------------
+import Test as t 
+print(t.x)
+#t is module 
+#x is member of module Test 
+
+
+How to access members directly?
+
+from module import members
+
+We can import particual members of modules using 
+from module_Name import member1, member2.
+
+from module_Name import * 
+
+The main adv is we can access members directly.
+#from Test import *
+from Test import x,y, add 
+
+print(x)
+print(y)
+print(add(1,2))
+
+dir() function 
+----------------
+direx.py
+
+a = 100
+b = 200
+print(dir())
+
+dir() - finding the members of modules.
+['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'a', 'b']
+
+interanl use. 
+
+Note: For every module at time of exection
+python interpreter will add some specail properties automatically
+for internal use. 
+ 
+ 
+ 
+ 
+testRushika.py
+
+print(dir()) - finding the members of modules.
+
+
+=====================================
+
+import  math
+#help(math)
+
+from math import *
+from math import sqrt , ceil
+from math import pi as Rajini
+print(sqrt(16))
+print(math.sqrt(4))
+print(ceil(9.6))
+print(floor(9.6))
+print(pi)
+
+random - module 
+================
+
+modules 
+dir()
+__name__ - special variable it return __main__ 
+if we execture - indivial file.
+help(modulesName)
+
+
+import math 
+import random 
+
+
+movies - 
+__init__.py 
+
+
+python package nothig but folder or directory.
+folder contains __init__.py - act as packages.
+ 
+
+File Handling
+--------------
+Data base or files 
+
+files are very common permanent storage area.
+
+Types of files 
+
+1.Binary File 
+Audio, Video, image files 
+2.Text Files 
+  character data 
+  
+  order.txt 
+  order.pdf 
+  
+  
+ 
