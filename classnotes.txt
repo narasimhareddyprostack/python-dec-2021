@@ -1339,4 +1339,150 @@ Audio, Video, image files
   order.pdf 
   
   
- 
+D:/Temp/one.txt 
+open
+read/write 
+close 
+
+Opening a File:
+
+Before performing any operation like read or write on the file,
+first we have to open that file.
+
+open() - function 
+Syntax 
+
+f = open(filename, mode)
+
+f = open('one.txt', )
+
+modes - r   w  a 
+        r+  w+ a+  x 
+
+Binany file :  rb  wb  ab 
+               r+b w+b a+b xb	
+
+
+
+1. r - open an existing file to read operation.
+       The file pointer is positioned at the begining of the file.
+       
+Note: If the spefied file doest not exists we will get FileNotFoundError.
+
+
+Note: Default mode - r 	
+
+2. w - open a existing file for write operation.
+If the file contains some data then it will be overriding.
+If the specifind file not exists, then it will create new file.
+
+3.a - append mode 
+      open a existing file for append operation.
+	  It wont override existing data.
+	  
+	  
+Reading Character Data from text file. 
+
+read()      ---> To read total data from the file 
+read(n)     ---> To read 'n' number of  characters 
+readline()  ---> To read only one line 
+readlines() ---> To read all lines into a list 
+   
+   
+message.txt 
+------------
+wap to print number of lines 
+                       words 
+					   chars in specifid file. 
+					   
+with Statement:
+---------------------
+{}  - block 
+Python - identation
+
+with open('two.txt','w') as f:
+    f.write("Hello,Good Evening")
+    f.write("Welcome to Pro Stack")
+    f.write("Python Full Stack")
+    print("File closed or not : ", f.closed)
+
+
+
+print("File closed closed: ", f.closed)
+
+
+=================================
+Object Oriented Programing 
+-------------------------
+class is template/plan/design/draft to construct object.
+class is blueprint to construct objects.
+
+class is there, we can create as many objects.
+
+In Python Language every thing is object.
+to Create object we required some plan or model or template or blueprint 
+nothig but class.
+
+class =  properties +  Methods,
+class = variable/properties/attributes + Methods/funciton/actions 
+class = data + functionality 
+
+class contains both variables and methods.
+
+============================================
+How to define a class?
+
+class - keywords 
+
+
+class Employee:
+    ''' Employee Class is crated for task No 123 - 16th Jan 2022'''
+    #variable: instance variable, static variabel, local variable
+    #methods: instance methids, static methods, class methods
+
+e1 = Employee()
+print(Employee.__doc__)
+
+documentation string represetns description of class.
+
+
+What is Object?
+Pysical existing of a class is nothing but object.
+
+We can create any number of objects for class.
+
+class Test:
+	pass
+
+t1= Test()
+t2=Test()
+t3=Test()
+
+What is reference variable? 
+the variable which can be used to refer object.
+
+By using ref varible we can access varaibles and method.
+
+
+
+Constructor 
+------------
+self variable
+self is default variable which is point to current object.
+By using self we  can access instance varaible and instance methods.
+
+Instance variable(Object Level Variable) 
+static variable (Class Level Varaible)
+local variable (class - method variablle)
+
+constructor is special method.
+The name of the constructor should be __init__(self)
+
+Constructor will be executed automatically at time of object creation.
+The main objective of constructor is to initilize object values.
+
+Per Object constructor will be executed only once.
+
+constructor is optioanl
+and If we are not provinding any constructor then python pvm
+will provide default constructor.
