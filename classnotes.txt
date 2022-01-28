@@ -1486,3 +1486,246 @@ Per Object constructor will be executed only once.
 constructor is optioanl
 and If we are not provinding any constructor then python pvm
 will provide default constructor.
+==========================================
+Difference between method and constructor
+
+
+Types variables 
+-----------------
+
+Instance variable(Object Level Variable) 
+static variable (Class Level Varaible)
+local variable (class - method variablle)
+
+
+Instacne Varaiables
+---------------------
+If the value of the variable is varied from object to object,
+then such type of variables are called instance variable.
+
+For every object a separate copy of instance varaibles will be created
+
+
+Where we can declare instance variable.
+--------------------------------------
+
+
+How to delete instance vairable?
+-------------------------------
+Inside a class 
+del self.variablename 
+Outside a class 
+del objectRef.variable
+
+Note: 
+The instance variable which are deleted from one object,
+will not be deleted from other object.
+
+
+Note2:
+If we change the value of instance varaibles of one object
+thouse changes wont reflected to remaining object.
+
+Every object - separate copy of instance variables are avaible.
+
+
+Static Variable
+--------------
+If the value of a varaible is not varied from object to object,
+such type of variable we have to declare with in class dirctory.
+Static variable total class only one copy will be created and shared every object of class.
+
+various places to declare static variable?
+----------------------------------------------
+we can declare within the class directly(outside of methods)
+inside a constructor by using class Name.
+
+inside instance method by using class Name 
+
+inside classmethod by using class name and cls name 
+inside static method by using class Name 
+
+
+How to access static variables?
+---------------------------------
+inside a constructor by using self or className 
+inside a instance method by using self or className
+inside a classmethod : by using cls variable and class Name
+
+inside static method by using className 
+Out side of the class: by using ref varaible or class NAme 
+
+
+How to update static variables?
+
+inside a constructor by using only - className 
+inside a instance method by using self or className
+inside a classmethod : by using cls variable and class Name
+
+inside static method by using className 
+Out side of the class: by using ref varaible or class NAme 
+
+local varaible
+===============
+
+
+
+How to delete static variable?
+
+Instance Method(self)  - setter and getter methods 
+------------
+Class Method (cls)    - class level methods  
+------------
+
+Static Methods()  - utility methods 
+---------------
+
+Inheritance
+-------------
+class User:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def getName(self):
+        print(self.name)
+class Employee(User):
+    def __init__(self, eno,ename, esal, eage):
+        super().__init__(ename,eage)
+        self.eno = eno
+        self.esal = esal
+    def getSal(self):
+        print(self.esal)
+
+e = Employee(101,"Rahul Gandhi", 45000, 50)
+print(e.__dict__)
+e.getName()
+e.getSal()
+
+
+Parent class methods are automatically available 
+to the child class, 
+
+we can access both parent class and child class method 
+with help child class object ref.
+
+e = Employee() 
+
+e.getSal()
+e.getName() 
+
+
+---------------
+Multiple Inheritance
+---------------------------
+Inheriting the properties from multiple classes into a single class at time.
+
+If the same method is inherited from both classes
+, pyhon program will always consider the Order of parent classes in declaration of child class.
+
+
+class Father:
+    def m1(self):
+        print("Father - m1() method")
+class Mother:
+    def m1(self):
+        print("Mother- m1() method")
+
+class Child(Mother,Father):
+    def m3(self):
+        print("Child - m3() method")
+
+c = Child()
+c.m1()
+
+
+
+class Parent:
+    def m1(self):
+        print("Parent Class m1 () method")
+class Boy(Parent):
+    pass
+class Girl(Parent):
+    pass
+
+b = Boy()
+b.m1()
+g = Girl()
+g.m1()
+
+
+=========================================
+super() is built-in method, to call super class construcotr, methods, variables.
+from child class.
+
+
+abstract
+================
+
+abstract method 
+- we dont know about implimentation, we have to declare method.
+   such methods we are calling abstract 
+   
+ abstract methods has only declaratin but not implimentation.
+ 
+ 
+ 
+ @abstractmethod 
+ def m1(self):
+        pass
+		
+		
+@abstractmethod decorator is part abc module. 
+
+- compulsary we should import abc module .
+
+How to use abstractmethod.
+
+from abc import * 
+class Test:
+	@abstractmethod
+	def m1(self):
+		pass
+
+		
+abstractclass:
+
+class GetDetails: 
+      pass
+	  
+implimentation of class is not complete.
+abstract class .
+
+
+from abc import* 
+
+class Test:
+      pass
+
+t = Test()
+
+======================
+from abc import *
+
+class Test(ABC):
+    @abstractmethod
+    def m1(self):
+        print("Hello")
+
+t1 = Test()
+t2= Test()
+
+print(t1)
+print(t2)
+
+Note: For abstract class , we can't instanciate abstract class.
+
+
+-------------------
+
+abstact = 1) class extends ABC 
+          2) class contains Atleast one abstract method .
+		  
+		  
+
+		  
+		  
